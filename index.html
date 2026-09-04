@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#e30613">
 <meta name="description" content="Mundo do Real — lojas e localização.">
-<title>Mundo do Real | Lojas</title>
-<style>
+<title>Mundo do Real | Lojas</title><style>
 :root{--red:#e30613;--red2:#b9000a;--yellow:#ffd400;--ink:#171717;--muted:#666;--bg:#f6f6f6;--card:#fff;--line:#ececec;--green:#16833a;--shadow:0 14px 40px rgba(0,0,0,.10);--r:22px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
 a{text-decoration:none;color:inherit}button,input{font:inherit}
@@ -23,129 +21,343 @@ main{max-width:1180px;margin:-38px auto 0;padding:0 16px 60px;position:relative;
 .stores{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:0 7px 25px rgba(0,0,0,.06);padding:20px;position:relative;overflow:hidden;transition:.2s transform,.2s box-shadow}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.card:before{content:"";height:6px;background:var(--yellow);position:absolute;left:0;right:0;top:0}
 .card-head{display:flex;gap:12px;margin-bottom:14px}.pin{min-width:46px;height:46px;border-radius:14px;background:var(--red);color:#fff;display:grid;place-items:center;font-size:19px;font-weight:950}.card h3{margin:0;font-size:19px}.tag{display:inline-block;margin-top:6px;background:#fff6c1;color:#725800;font-size:10px;font-weight:900;padding:5px 8px;border-radius:8px}
 .status{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:900;color:var(--green);margin:2px 0 5px}.status.closed{color:#c4000b}.dot{width:8px;height:8px;border-radius:50%;background:var(--green)}.status.closed .dot{background:#c4000b}.address{font-size:13px;color:#555;line-height:1.45;min-height:38px}.hours{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0;margin:12px 0}.hours div{display:flex;justify-content:space-between;gap:12px;padding:4px 0;font-size:13px}.hours span:first-child{color:#777}.hours span:last-child{font-weight:900;text-align:right}.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.btn{display:flex;align-items:center;justify-content:center;gap:7px;padding:12px 10px;border-radius:12px;font-weight:900;font-size:13px}.btn.red{background:var(--red);color:#fff}.btn.light{background:#f2f2f2}.btn:hover{filter:brightness(.96)}
+
 .map{background:#e9e9e9;border-radius:24px;min-height:260px;display:grid;place-items:center;text-align:center;padding:30px;position:relative;overflow:hidden}.map-grid{position:absolute;inset:0;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:38px 38px;opacity:.7}.map-content{position:relative;z-index:2;background:#fff;padding:22px;border-radius:18px;box-shadow:var(--shadow);max-width:440px}.map-content h3{margin:0 0 7px}.map-content p{color:var(--muted);margin:0 0 15px;font-size:14px}
 .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.info{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.info .ico{font-size:25px}.info h3{margin:10px 0 5px}.info p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
 footer{background:#171717;color:#ddd;padding:38px 18px}.footer-in{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{font-weight:950;color:var(--yellow);font-size:18px}.footer-in p{margin:7px 0 0;color:#aaa;font-size:13px}.socials{display:flex;gap:8px}.socials a{background:#2a2a2a;padding:9px 12px;border-radius:10px;font-size:13px}
 .empty{display:none;text-align:center;padding:35px;background:#fff;border-radius:18px;color:var(--muted)}
+
 @media(max-width:900px){.stores{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.info-grid{grid-template-columns:1fr}.promo{grid-template-columns:1fr}}
 @media(max-width:620px){.hero{padding-bottom:68px}.hero-content{margin-top:38px}.hero p{font-size:16px}.stores{grid-template-columns:1fr}.top-in{justify-content:center}.top-in span:last-child{display:none}.section{padding-top:38px}.section-head{display:block}.count{display:block;margin-top:8px}.promo{padding:22px}.card-actions{grid-template-columns:1fr}.logo{width:230px}}
-</style>
-</head>
-<body>
-<div class="top"><div class="top-in"><span>⭐ Preços incríveis todos os dias</span><span>📍 São Luís — Maranhão</span></div></div>
-
-<header class="hero">
+</style></head><body><div class="top">
+  <div class="top-in">
+    <span>⭐ Preços incríveis todos os dias</span>
+    <span>📍 São Luís — Maranhão</span>
+  </div>
+</div><header class="hero">
 <nav class="nav">
 <img class="logo" src="logo-mundo-do-real.png" alt="Mundo do Real">
-<div class="navlinks"><a href="#lojas">Lojas</a><a href="#mapa">Mapa</a></div>
-</nav>
-<div class="hero-content">
+<div class="navlinks">
+<a href="#lojas">Lojas</a>
+<a href="#mapa">Mapa</a>
+</div>
+</nav><div class="hero-content">
 <div class="badge">📍 SÃO LUÍS — MA</div>
 <h1>Um mundo de opções em um só lugar!</h1>
 <p>Encontre a unidade mais próxima, confira o horário e abra a rota no Google Maps. Tudo de forma rápida pelo celular.</p>
-<div class="actions"><a class="cta" href="#lojas">🏪 ENCONTRAR UMA LOJA</a></div>
+<div class="actions">
+<a class="cta" href="#lojas">🏪 ENCONTRAR UMA LOJA</a>
 </div>
-</header>
-
-<main>
-<div class="searchbox"><span class="search-icon">🔎</span><input id="search" type="search" placeholder="Digite o bairro ou nome da loja..."></div>
-
-<section class="section" id="lojas">
-<div class="section-head"><div><h2>Nossas lojas</h2><p>Escolha uma unidade e veja os detalhes.</p></div><span class="count" id="count">6 unidades</span></div>
-<div class="filters"><button class="filter active" data-filter="all">Todas</button><button class="filter" data-filter="Cidade Operária">Cidade Operária</button><button class="filter" data-filter="Cohatrac">Cohatrac</button><button class="filter" data-filter="Anjo da Guarda">Anjo da Guarda</button><button class="filter" data-filter="Bequimão">Bequimão</button></div>
-
-<section class="stores" id="storeGrid">
-<article class="card" data-area="Cidade Operária" data-name="Cidade Operária Unidade I" data-hours='{"mon":[[8,18]],"tue":[[8,18]],"wed":[[8,18]],"thu":[[8,18]],"fri":[[8,18]],"sat":[[8,18]],"sun":[[8,12]]}'>
+</div>
+</header><main><div class="searchbox">
+<span class="search-icon">🔎</span>
+<input id="search" type="search" placeholder="Digite o bairro ou nome da loja...">
+</div><section class="section" id="lojas"><div class="section-head">
+<div>
+<h2>Nossas lojas</h2>
+<p>Escolha uma unidade e veja os detalhes.</p>
+</div>
+<span class="count" id="count">6 unidades</span>
+</div><div class="filters">
+<button class="filter active" data-filter="all">Todas</button>
+<button class="filter" data-filter="Cidade Operária">Cidade Operária</button>
+<button class="filter" data-filter="Cohatrac">Cohatrac</button>
+<button class="filter" data-filter="Anjo da Guarda">Anjo da Guarda</button>
+<button class="filter" data-filter="Bequimão">Bequimão</button>
+</div><section class="stores" id="storeGrid"><article class="card" data-area="Cidade Operária" data-name="Cidade Operária Unidade I" data-hours='{"mon":[[8,18]],"tue":[[8,18]],"wed":[[8,18]],"thu":[[8,18]],"fri":[[8,18]],"sat":[[8,18]],"sun":[[8,12]]}'>
 <div class="card-head"><div class="pin">1</div><div><h3>Cidade Operária — Unidade I</h3><span class="tag">SÃO LUÍS — MA</span></div></div>
 <div class="status"><i class="dot"></i><span class="status-text">Verificando...</span></div>
 <div class="address">📍 Rua Exemplo, 100 — Cidade Operária, São Luís — MA</div>
 <div class="hours"><div><span>Seg. a sáb.</span><span>8h às 18h</span></div><div><span>Domingo</span><span>8h às 12h</span></div></div>
-<div class="card-actions"><a class="btn red" href="https://maps.app.goo.gl/dfWr7xkmYEh2ceoC7?g_st=ac" target="_blank" rel="noopener">📍 Como chegar</a><a class="btn light" href="https://wa.me/5598981196863" target="_blank" rel="noopener">💬 WhatsApp</a></div></article>
-
-<article class="card" data-area="Cidade Operária" data-name="Cidade Operária Unidade II" data-hours='{"mon":[[8,18]],"tue":[[8,18]],"wed":[[8,18]],"thu":[[8,18]],"fri":[[8,18]],"sat":[[8,18]],"sun":[[8,12]]}'>
+<div class="card-actions">
+<a class="btn red" href="https://maps.app.goo.gl/dfWr7xkmYEh2ceoC7?g_st=ac" target="_blank" rel="noopener">📍 Como chegar</a>
+<a class="btn light" href="https://wa.me/5598981196863" target="_blank" rel="noopener">💬 WhatsApp</a>
+</div>
+</article><article class="card" data-area="Cidade Operária" data-name="Cidade Operária Unidade II" data-hours='{"mon":[[8,18]],"tue":[[8,18]],"wed":[[8,18]],"thu":[[8,18]],"fri":[[8,18]],"sat":[[8,18]],"sun":[[8,12]]}'>
 <div class="card-head"><div class="pin">2</div><div><h3>Cidade Operária — Unidade II</h3><span class="tag">SÃO LUÍS — MA</span></div></div>
-<div class="status"><i class="dot"></i><span class="status-text">Verificando...</span></div><div class="address">📍 Avenida Exemplo, 200 — Cidade Operária, São Luís — MA</div>
+<div class="status"><i class="dot"></i><span class="status-text">Verificando...</span></div>
+<div class="address">📍 Avenida Exemplo, 200 — Cidade Operária, São Luís — MA</div>
 <div class="hours"><div><span>Seg. a sáb.</span><span>8h às 18h</span></div><div><span>Domingo</span><span>8h às 12h</span></div></div>
-<div class="card-actions"><a class="btn red" href="https://maps.app.goo.gl/k2ZHxxyNiPcAc83j6?g_st=ac" target="_blank" rel="noopener">📍 Como chegar</a><a class="btn light" href="https://wa.me/5598982516583" target="_blank" rel="noopener">💬 WhatsApp</a></div></article>
-
-<article class="card" data-area="Cohatrac" data-name="Cohatrac Unidade I" data-hours='{"mon":[[8,18]],"tue":[[8,18]],"wed":[[8,18]],"thu":[[8,18]],"fri":[[8,18]],"sat":[[8,14]],"sun":[]}'>
+<div class="card-actions">
+<a class="btn red" href="https://maps.app.goo.gl/k2ZHxxyNiPcAc83j6?g_st=ac" target="_blank" rel="noopener">📍 Como chegar</a>
+<a class="btn light" href="https://wa.me/5598982516583" target="_blank" rel="noopener">💬 WhatsApp</a>
+</div>
+</article><article class="card" data-area="Cohatrac" data-name="Cohatrac Unidade I" data-hours='{"mon":[[8,18]],"tue":[[8,18]],"wed":[[8,18]],"thu":[[8,18]],"fri":[[8,18]],"sat":[[8,14]],"sun":[]}'>
 <div class="card-head"><div class="pin">3</div><div><h3>Cohatrac — Unidade I</h3><span class="tag">SÃO LUÍS — MA</span></div></div>
-<div class="status"><i class="dot"></i><span class="status-text">Verificando...</span></div><div class="address">📍 Endereço da unidade I — Cohatrac, São Luís — MA</div>
+<div class="status"><i class="dot"></i><span class="status-text">Verificando...</span></div>
+<div class="address">📍 Endereço da unidade I — Cohatrac, São Luís — MA</div>
 <div class="hours"><div><span>Seg. a sex.</span><span>8h às 18h</span></div><div><span>Sábado</span><span>8h às 14h</span></div><div><span>Domingo</span><span>Fechado</span></div></div>
-<div class="card-actions"><a class="btn red" href="https://maps.app.goo.gl/1NcPU5PYovahVZMf7?g_st=ac" target="_blank" rel="noopener">📍 Como chegar</a><a class="btn light" href="https://wa.me/5598981793419" target="_blank" rel="noopener">💬 WhatsApp</a></div></article>
-
-<article class="card" data-area="Cohatrac" data-name="Cohatrac Unidade II" data-hours='{"mon":[[8,18]],"tue":[[8,18]],"wed":[[8,18]],"thu":[[8,18]],"fri":[[8,18]],"sat":[[8,14]],"sun":[]}'>
+<div class="card-actions">
+<a class="btn red" href="https://maps.app.goo.gl/1NcPU5PYovahVZMf7?g_st=ac" target="_blank" rel="noopener">📍 Como chegar</a>
+<a class="btn light" href="https://wa.me/5598981793419" target="_blank" rel="noopener">💬 WhatsApp</a>
+</div>
+</article><article class="card" data-area="Cohatrac" data-name="Cohatrac Unidade II" data-hours='{"mon":[[8,18]],"tue":[[8,18]],"wed":[[8,18]],"thu":[[8,18]],"fri":[[8,18]],"sat":[[8,14]],"sun":[]}'>
 <div class="card-head"><div class="pin">4</div><div><h3>Cohatrac — Unidade II</h3><span class="tag">SÃO LUÍS — MA</span></div></div>
-<div class="status"><i class="dot"></i><span class="status-text">Verificando...</span></div><div class="address">📍 Endereço da unidade II — Cohatrac, São Luís — MA</div>
+<div class="status"><i class="dot"></i><span class="status-text">Verificando...</span></div>
+<div class="address">📍 Endereço da unidade II — Cohatrac, São Luís — MA</div>
 <div class="hours"><div><span>Seg. a sex.</span><span>8h às 18h</span></div><div><span>Sábado</span><span>8h às 14h</span></div><div><span>Domingo</span><span>Fechado</span></div></div>
-<div class="card-actions"><a class="btn red" href="https://maps.app.goo.gl/7pGJV6Z6Hdv2V1eN7?g_st=ac" target="_blank" rel="noopener">📍 Como chegar</a><a class="btn light" href="https://wa.me/5598981793419" target="_blank" rel="noopener">💬 WhatsApp</a></div></article>
-
-<article class="card" data-area="Anjo da Guarda" data-name="Anjo da Guarda" data-hours='{"mon":[[8,18]],"tue":[[8,18]],"wed":[[8,18]],"thu":[[8,18]],"fri":[[8,18]],"sat":[[8,14]],"sun":[[8,12]]}'>
+<div class="card-actions">
+<a class="btn red" href="https://maps.app.goo.gl/7pGJV6Z6Hdv2V1eN7?g_st=ac" target="_blank" rel="noopener">📍 Como chegar</a>
+<a class="btn light" href="https://wa.me/5598981793419" target="_blank" rel="noopener">💬 WhatsApp</a>
+</div>
+</article><article class="card" data-area="Anjo da Guarda" data-name="Anjo da Guarda" data-hours='{"mon":[[8,18]],"tue":[[8,18]],"wed":[[8,18]],"thu":[[8,18]],"fri":[[8,18]],"sat":[[8,14]],"sun":[[8,12]]}'>
 <div class="card-head"><div class="pin">5</div><div><h3>Anjo da Guarda</h3><span class="tag">SÃO LUÍS — MA</span></div></div>
-<div class="status"><i class="dot"></i><span class="status-text">Verificando...</span></div><div class="address">📍 Rua Exemplo, 500 — Anjo da Guarda, São Luís — MA</div>
+<div class="status"><i class="dot"></i><span class="status-text">Verificando...</span></div>
+<div class="address">📍 Rua Exemplo, 500 — Anjo da Guarda, São Luís — MA</div>
 <div class="hours"><div><span>Seg. a sex.</span><span>8h às 18h</span></div><div><span>Sábado</span><span>8h às 14h</span></div><div><span>Domingo</span><span>8h às 12h</span></div></div>
-<div class="card-actions"><a class="btn red" href="https://maps.app.goo.gl/5s1xZ7VkwZu3da7E6?g_st=ac" target="_blank" rel="noopener">📍 Como chegar</a><a class="btn light" href="https://wa.me/5598970132072" target="_blank" rel="noopener">💬 WhatsApp</a></div></article>
-
-<article class="card" data-area="Bequimão" data-name="Bequimão" data-hours='{"mon":[[9,19]],"tue":[[9,19]],"wed":[[9,19]],"thu":[[9,19]],"fri":[[9,19]],"sat":[[8,14]],"sun":[]}'>
+<div class="card-actions">
+<a class="btn red" href="https://maps.app.goo.gl/5s1xZ7VkwZu3da7E6?g_st=ac" target="_blank" rel="noopener">📍 Como chegar</a>
+<a class="btn light" href="https://wa.me/5598970132072" target="_blank" rel="noopener">💬 WhatsApp</a>
+</div>
+</article><article class="card" data-area="Bequimão" data-name="Bequimão" data-hours='{"mon":[[9,19]],"tue":[[9,19]],"wed":[[9,19]],"thu":[[9,19]],"fri":[[9,19]],"sat":[[8,14]],"sun":[]}'>
 <div class="card-head"><div class="pin">6</div><div><h3>Bequimão</h3><span class="tag">SÃO LUÍS — MA</span></div></div>
-<div class="status"><i class="dot"></i><span class="status-text">Verificando...</span></div><div class="address">📍 Endereço da unidade — Bequimão, São Luís — MA</div>
+<div class="status"><i class="dot"></i><span class="status-text">Verificando...</span></div>
+<div class="address">📍 Endereço da unidade — Bequimão, São Luís — MA</div>
 <div class="hours"><div><span>Seg. a sex.</span><span>9h às 19h</span></div><div><span>Sábado</span><span>8h às 14h</span></div><div><span>Domingo</span><span>Fechado</span></div></div>
-<div class="card-actions"><a class="btn red" href="https://maps.app.goo.gl/29AiddbWxeVDQ6Um6?g_st=ac" target="_blank" rel="noopener">📍 Como chegar</a><a class="btn light" href="https://wa.me/5598985127835" target="_blank" rel="noopener">💬 WhatsApp</a></div></article>
-</section>
-<div class="empty" id="empty">Nenhuma loja encontrada. Tente outro bairro ou nome.</div>
-</section>
+<div class="card-actions">
+<a class="btn red" href="https://maps.app.goo.gl/29AiddbWxeVDQ6Um6?g_st=ac" target="_blank" rel="noopener">📍 Como chegar</a>
+<a class="btn light" href="https://wa.me/5598985127835" target="_blank" rel="noopener">💬 WhatsApp</a>
+</div>
+</article></section><div class="empty" id="empty">Nenhuma loja encontrada. Tente outro bairro ou nome.</div></section></main><footer>
+<div class="footer-in">
+<div>
+<div class="footer-brand">MUNDO DO REAL</div>
+<p>Um mundo de opções em um só lugar! • São Luís — Maranhão</p>
+</div>
+<div class="socials">
+<a href="https://www.instagram.com/mundodorealslz/" target="_blank" rel="noopener">Instagram</a>
+</div>
+</div>
+</footer><script>
+
+/* =========================================================
+   FERIADOS E DATAS ESPECIAIS
+   =========================================================
+
+   COMO CADASTRAR:
+
+   "AAAA-MM-DD": {
+      "Nome da loja": [[hora inicial, hora final]]
+   }
+
+   Exemplos:
+
+   [[8,14]] = aberto das 8h às 14h
+   [[9,13]] = aberto das 9h às 13h
+   []       = fechado
+
+   Se uma loja NÃO estiver cadastrada na data,
+   ela continuará usando o horário normal.
+
+   ========================================================= */
+
+const feriados = {
+
+  /*
+  EXEMPLO:
+
+  "2026-09-07": {
+    "Cidade Operária — Unidade I": [[8,14]],
+    "Cidade Operária — Unidade II": [[8,14]],
+    "Cohatrac Unidade I": [],
+    "Cohatrac Unidade II": [],
+    "Anjo da Guarda": [[9,13]],
+    "Bequimão": [[8,14]]
+  },
+
+  */
+
+};
 
 
-  <!--<section class="section" id="mapa">
-<div class="section-head"><div><h2>🗺️ Encontre no mapa</h2><p>Mapa geral das unidades — pronto para receber as localizações reais.</p></div></div>
-<div class="map"><div class="map-grid"></div><div class="map-content"><h3>📍 Mapa das lojas</h3><p>Substitua este bloco por um mapa incorporado do Google Maps ou por um mapa com todas as unidades.</p><a class="btn red" href="https://www.google.com/maps" target="_blank" rel="noopener">Abrir Google Maps</a></div></div>
-</section>-->
+/* =========================================================
+   SISTEMA DE FILTRO E PESQUISA
+   ========================================================= */
 
-</main>
+const cards=[...document.querySelectorAll('.card')],
+      search=document.getElementById('search'),
+      count=document.getElementById('count'),
+      empty=document.getElementById('empty');
 
-
-<footer>
-<div class="footer-in"><div><div class="footer-brand">MUNDO DO REAL</div><p>Um mundo de opções em um só lugar! • São Luís — Maranhão</p></div><div class="socials"><a href="https://www.instagram.com/mundodorealslz/" target="_blank" rel="noopener">Instagram</a></div></div>
-</footer>
-
-<script>
-const cards=[...document.querySelectorAll('.card')], search=document.getElementById('search'), count=document.getElementById('count'), empty=document.getElementById('empty');
 let active='all';
 
 function render(){
-  const q=search.value.toLowerCase().trim(); let n=0;
+
+  const q=search.value.toLowerCase().trim();
+  let n=0;
+
   cards.forEach(c=>{
-    const ok=(active==='all'||c.dataset.area===active)&&(c.dataset.name.toLowerCase().includes(q)||c.dataset.area.toLowerCase().includes(q));
-    c.style.display=ok?'block':'none'; if(ok)n++;
+
+    const ok=
+      (active==='all'||c.dataset.area===active) &&
+      (
+        c.dataset.name.toLowerCase().includes(q) ||
+        c.dataset.area.toLowerCase().includes(q)
+      );
+
+    c.style.display=ok?'block':'none';
+
+    if(ok)n++;
+
   });
-  count.textContent=n+' unidade'+(n===1?'':'s'); empty.style.display=n?'none':'block';
+
+  count.textContent=n+' unidade'+(n===1?'':'s');
+  empty.style.display=n?'none':'block';
+
 }
 
-document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');active=b.dataset.filter;render()}));
-search.addEventListener('input',render); render();
+document.querySelectorAll('.filter').forEach(b=>
+  b.addEventListener('click',()=>{
 
-// Status em tempo real usando exclusivamente o fuso horário oficial de Brasília.
+    document.querySelectorAll('.filter')
+      .forEach(x=>x.classList.remove('active'));
+
+    b.classList.add('active');
+    active=b.dataset.filter;
+    render();
+
+  })
+);
+
+search.addEventListener('input',render);
+render();
+
+
+/* =========================================================
+   HORÁRIO DE BRASÍLIA
+   ========================================================= */
+
 const dayKeys=['sun','mon','tue','wed','thu','fri','sat'];
+
 function getBrasiliaNow(){
-  const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Sao_Paulo',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+
+  const parts=new Intl.DateTimeFormat('en-US',{
+    timeZone:'America/Sao_Paulo',
+    year:'numeric',
+    month:'2-digit',
+    day:'2-digit',
+    weekday:'short',
+    hour:'2-digit',
+    minute:'2-digit',
+    hour12:false
+  }).formatToParts(new Date());
+
   const get=t=>parts.find(p=>p.type===t)?.value;
-  const weekdays={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
-  let hour=Number(get('hour')); if(hour===24) hour=0;
-  return {day:weekdays[get('weekday')], minutes:hour*60+Number(get('minute'))};
+
+  const weekdays={
+    Sun:0,
+    Mon:1,
+    Tue:2,
+    Wed:3,
+    Thu:4,
+    Fri:5,
+    Sat:6
+  };
+
+  let hour=Number(get('hour'));
+
+  if(hour===24) hour=0;
+
+  return {
+    date:`${get('year')}-${get('month')}-${get('day')}`,
+    day:weekdays[get('weekday')],
+    minutes:hour*60+Number(get('minute'))
+  };
+
 }
+
+
+/* =========================================================
+   VERIFICA SE ESTÁ ABERTO
+   ========================================================= */
+
+function isOpen(schedule,minutes){
+
+  return schedule.some(([start,end])=>
+    minutes>=start*60 &&
+    minutes<end*60
+  );
+
+}
+
+
+/* =========================================================
+   ATUALIZA STATUS DAS LOJAS
+   ========================================================= */
+
 function updateStatuses(){
+
   const now=getBrasiliaNow();
+
   cards.forEach(card=>{
-    const status=card.querySelector('.status'), text=card.querySelector('.status-text');
-    const schedule=JSON.parse(card.dataset.hours||'{}')[dayKeys[now.day]]||[];
-    const open=schedule.some(([start,end])=>now.minutes>=start*60 && now.minutes<end*60);
+
+    const status=card.querySelector('.status');
+    const text=card.querySelector('.status-text');
+
+    const nomeLoja=card.dataset.name;
+
+    const horarioNormal=
+      JSON.parse(card.dataset.hours||'{}')[dayKeys[now.day]]||[];
+
+    let schedule=horarioNormal;
+    let horarioEspecial=false;
+
+    /*
+      Se existir um feriado para hoje e essa loja
+      estiver cadastrada nele, usa o horário especial.
+    */
+
+    if(
+      feriados[now.date] &&
+      Object.prototype.hasOwnProperty.call(
+        feriados[now.date],
+        nomeLoja
+      )
+    ){
+
+      schedule=feriados[now.date][nomeLoja];
+      horarioEspecial=true;
+
+    }
+
+    const open=isOpen(schedule,now.minutes);
+
     status.classList.toggle('closed',!open);
-    text.textContent=open?'Aberta agora':'Fechada agora';
-    status.setAttribute('title','Horário calculado pelo fuso de Brasília (America/Sao_Paulo)');
+
+    if(horarioEspecial){
+
+      if(open){
+        text.textContent='Aberta agora • Horário especial';
+      }else{
+        text.textContent='Fechada agora • Horário especial';
+      }
+
+      status.setAttribute(
+        'title',
+        'Horário especial de feriado'
+      );
+
+    }else{
+
+      text.textContent=open?'Aberta agora':'Fechada agora';
+
+      status.setAttribute(
+        'title',
+        'Horário calculado pelo fuso de Brasília (America/Sao_Paulo)'
+      );
+
+    }
+
   });
+
 }
+
 updateStatuses();
+
+/*
+  Atualiza automaticamente a cada 30 segundos.
+*/
 setInterval(updateStatuses,30000);
-</script>
-</body>
+
+</script></body>
 </html>
